@@ -1,0 +1,7 @@
+user_name=str(input("Enter the user name: "))
+password=str(input("Enter your password: "))
+age=int(input("Enter your age: "))
+print("**********The profile of the user is**********")
+print("The user name is:", user_name)
+print("The password is: ",password)
+print("The age of the user is: ",age)

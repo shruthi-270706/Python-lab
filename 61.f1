@@ -1,0 +1,11 @@
+import math
+def cs(n,x):
+    r=1
+    for i in range(n):
+        r+=(x**i)/math.factorial(i)
+    return r
+def cs_a():
+    n=int(input("Enter the number of termns: "))
+    x=int(input("Enter the value: "))
+    print(cs(n,x))
+cs_a()

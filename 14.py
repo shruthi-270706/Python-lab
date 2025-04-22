@@ -1,0 +1,8 @@
+number_of_child=int(input("Enter the number of children: "))
+number_of_adult=int(input("Enter the number of adult: "))
+total_price=(number_of_child*5)+(number_of_adult*10)
+price_rupee=(total_price*82.2)
+print(f"Number of children tickets: {number_of_child}")
+print(f"Number of adult ticket: {number_of_adult}")
+print(f"Total cost of tickets: ${total_price} Dollars")
+print(f"Amount in rupees: {price_rupee} Rupees")

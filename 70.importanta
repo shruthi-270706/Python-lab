@@ -1,0 +1,39 @@
+def details():
+    while True:
+        htno = input("Enter your Hallticket number: ")
+        if ' ' in htno:
+            print("No spaces allowed in HTNO")
+            continue
+        if len(htno) != 10 or not htno[4].isalpha():
+            print("Invalid HTNO(should be 10 characters with the 5th character as an alphabet)")
+            continue
+        break
+    while True:
+        email = input("Enter your E-mail id: ")
+        if ' ' in email:
+            print("No spaces allowed in Email")
+            continue
+        if email.endswith(".com") and '@' in email:
+            break
+        else:
+            print("Invalid E-mail id, should contain '@' and end with '.com'")
+
+    while True:
+        mobile = input("Enter your Mobile number: ")
+        if ' ' in mobile:
+            print("No spaces allowed in Mobile number")
+            continue
+        if len(mobile) == 10 and mobile.isdigit() and mobile[0] != '0':
+            break
+        else:
+            print("Invalid Mobile number (should be exactly 10 digits and not start with 0)")
+
+    print("*****************************")
+    print("HTNO:", htno)
+    print("E-mail:", email)
+    print("Mobile:", mobile)
+    print("*****************************")
+    print("Valid HTNO")
+    print("Valid E-mail id")
+    print("Valid Mobile number")
+details()

@@ -1,0 +1,56 @@
+def details(htno, email, mobile):
+    if ' ' in htno or ' ' in email or ' ' in mobile:
+        if ' ' in htno:
+            print("No spaces in HTNO")
+            htno=input("Try again!! Enter HTNO correctly: ")
+            details(htno,email,mobile)
+        else:print("HTNO is correct")
+        if ' ' in email:
+            print("No spaces in Email")
+            email=input("Try again!! Enter email id correctly: ")
+            details(htno,email,mobile)
+        else:print("Email is correct")
+        if ' ' in mobile:
+            print("No spaces in Mobile number")
+            mobile=input("Try again!! Enter mobile number correctly: ")
+            details(htno,email,mobile)
+        else:print("Mobile number is correct")
+    else:
+        print("*****************************")
+        print("HTNO:", htno)
+        print("E-mail:", email)
+        print("Mobile:", mobile)
+        print("*****************************")
+        if len(htno) != 10 or len(mobile) != 10:
+            if len(htno) != 10:
+                print("Invalid HTNO (should be 10 digits with one character)")
+            else:
+                print("HTNO is correct")
+
+            if len(mobile) != 10:
+                print("Invalid Mobile number(should be 10 digits)")
+            else:
+                print("Mobile number is correct")
+        else:
+            new_email = email[:-5:-1]
+            if new_email == "moc." and '@' in email:
+                print("Valid E-mail id")
+            else:
+                print("Invalid E-mail id")
+                email=input("Try again!! Enter email id correctly: ")
+                details(htno,email,mobile)
+            if mobile[0] == '0':
+                print("Invalid Mobile number")
+                mobile=input("Try again!! Enter mobile number correctly: ")
+                details(htno,email,mobile)
+            else:
+                print("Valid Mobile number")
+            if htno[4].isalpha():
+                print("Valid HTNO")
+            else:
+                print("Invalid HTNO......")
+                
+htno = input("Enter your Hallticket number: ")
+email = input("Enter your E-mail id: ")
+mobile = input("Enter your Mobile number: ")
+details(htno, email, mobile)

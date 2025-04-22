@@ -1,0 +1,10 @@
+def vowel():
+    name=input("Enter any string: ")
+    count=0
+    v='aeiouAEIOU'
+    for ch in name:
+        if ch in v:count+=1
+    return count
+def vowel_string():
+    print("The no.of vowels are:",vowel())
+vowel_string()

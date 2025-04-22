@@ -1,0 +1,9 @@
+def series(num):
+    result=0
+    for i in range(1,num+1):
+        result+=1/i
+    return result
+def series_cal():
+    num=int(input("Enter the number: "))
+    print("The sum is: ",series(num))
+series_cal()

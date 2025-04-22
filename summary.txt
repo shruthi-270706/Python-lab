@@ -1,0 +1,4 @@
+Total words: 10
+Unique words: 9
+Longest word: University
+Most frequent word: I'm (2 times)

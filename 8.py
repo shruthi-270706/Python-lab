@@ -1,0 +1,7 @@
+radius=int(input("Enter the radius: "))
+slant_height=int(input("Enter the slant height: "))
+height=int(input("Enter the height: "))
+surface_area=(3.1415*radius**2)+(3.1415*radius*slant_height)
+volume=1/3*(3.1415*radius**2*height)
+print(f"The surface area of the cone: {surface_area:.2f}")
+print(f"The volume of the cone: {volume:.2f}")

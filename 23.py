@@ -1,0 +1,5 @@
+product=int(input("Enter the original price of the product: "))
+final_price=(product-product*(20/100))
+print(f"Original price: {product}")
+print("Discount percentage: 20")
+print(f"Final price after discount: {final_price}")
