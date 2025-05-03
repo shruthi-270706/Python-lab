@@ -1,4 +1,4 @@
-num=int(input("Enter the number: "))
+num=int(input("Enter the no.of elements: "))
 A=[]
 for i in range(num):
     A.append(int(input("Enter the number: ")))
