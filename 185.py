@@ -1,7 +1,5 @@
-#Demonstration on class and object(s) creation in python
-#class creation
 class student:
-    def _init_(self, name, roll_no, marks, address):
+    def __init__(self, name, roll_no, marks, address):
         self.name = name
         self.roll_no = roll_no
         self.marks = marks
